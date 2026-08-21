@@ -1,0 +1,50 @@
+---
+title: "Homework #1"
+author: "Michael Costello"
+format: html
+editor: visual
+---
+
+
+
+**Q1: What do you think being a data scientist is about?** 
+
+I think it is about all parts of the data investigation process (Lee et. al, 2022), possibly with extended focus on the steps of "Considering and gathering data" and "Processing data", as Lin and Li (2023) suggest those stages often take \~80% of the project's data scientist's time to complete.
+
+**Q2: What differences/similarities do you see between data scientists and statisticians?**
+
+I interviewed for a job at Westat about 15 years ago. They sorted their "statisticians" into people who did programming on the data, wrote SAS code, etc. and people who wrote formulas, discussed the big picture of whether or not particular survey questions were allowed, methodologies were valid, and results were significant. I'm not sure that is exactly the breakdown between data scientist vs. statistician, but it feels a little bit like that to me. Something like statisticians do the real, heady work of thinking about data, while data scientists do the grunt work.
+
+**Q3: How do you view yourself in relation to these two areas?**
+
+I've always called myself a statistician, as that's what it says on my degree, but when I get into projects I find myself doing whatever is needed to move things forward. I am often the only data person on a project, so in that sense I am both the data scientist and the statistician, and I like that. It leads to lots of variety in my work and I like that. I will say honestly though that when I have the statistician hat on, I do have a much higher feeling of impostor syndrome than when I'm cleaning and manipulating data, and maybe that is the difference (from Q2): The work of a data scientist has the ability to be infinite, but cannot be because of time constraints and hours of LOE. The work of statisticians is finite, as they answer some kind of logistical question from a theoretical framing and then move on to the next project (in my experiences). 
+
+I don't really have anything to say that fits nicely into markdown list, other than to say that I wouldn't call myself good at any of the following tools, but I hope to get better in this course:
+
+- R
+- Quarto
++ Git
+
+```{r}
+#| echo: true
+y <- density(iris$Petal.Width)
+class(y)
+typeof(y)
+str(y)
+```
+
+Now that I know what the density function object looks like, I can go ahead and graph a histogram of the same variable.
+
+```{r}
+#| echo: false
+hist(iris$Petal.Width)
+
+```
+
+## References
+
+*I'm sure there is a Quarto way to list citations in a markdown file, but I wasn't able to apply it successfully through the bibtex options I was reading about online, so I'm just going to list them here as I'm able:*
+
+Lee, H. S., Mojica, G. F., Thrasher, E. P., & Baumgartner, P. (2022). Investigating data like a data scientist: Key practices and processes. *Statistics Education Research Journal, Special Issue: Research on Data Science Education*, 21(2). https://doi.org/10.52041/serj.v21i2.41
+
+Lin, H., & Li, M. (2023). *Practitioner’s guide to data science*. Chapman and Hall/CRC. https://doi.org/10.1201/9781351132916
