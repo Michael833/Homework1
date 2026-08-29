@@ -1,0 +1,56 @@
+---
+title: "Homework #2"
+author: "Michael Costello"
+format: html
+editor: visual
+---
+
+
+#Task 1: Basic Vector Practice
+
+1. Create two vectors of the pre- and post-measurements:
+
+```{r}
+pre <- c(130, 128, 116, 124, 133, 134, 118, 126, 114, 127, 141, 138, 128, 140, 137, 131, 120, 128, 139, 135)
+
+post <- c(114, 98, 113, 99, 107, 116, 113, 111, 119, 117, 101, 119, 130, 122, 106, 106, 124, 102, 117, 113)
+```
+
+2. Assign names to the vector elements:
+
+```{r}
+names(pre)  <- paste("Subject", 1:20, sep = "_")
+names(post) <- paste("Subject", 1:20, sep = "_")
+```
+
+3. Calculate the change (decrease?) in blood pressure accross all patients:
+
+```{r}
+diff <- pre - post
+diff
+```
+4. Find the average decrease in BP across all patients:
+
+```{r}
+mean(diff)
+```
+5. Patients who experienced a deceased in BP after treatment:
+
+```{r}
+improved <- which(diff > 0, useNames = TRUE)
+improved
+```
+
+6. Create a new vector object with only improvers and their BPs:
+
+```{r}
+improved <- which(diff > 0)  #Well, this is incorrect. I can't figure out how to get just the BPs rather than their indices.
+improved
+```
+
+7. Find the mean of the improvers BPs:
+
+```{r}
+mean(improved)
+```
+

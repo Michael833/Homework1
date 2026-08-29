@@ -12,5 +12,12 @@
     "title": "Homework #1",
     "section": "References",
     "text": "References\nI’m sure there is a Quarto way to list citations in a markdown file, but I wasn’t able to apply it successfully through the bibtex options I was reading about online, so I’m just going to list them here as I’m able:\nLee, H. S., Mojica, G. F., Thrasher, E. P., & Baumgartner, P. (2022). Investigating data like a data scientist: Key practices and processes. Statistics Education Research Journal, Special Issue: Research on Data Science Education, 21(2). https://doi.org/10.52041/serj.v21i2.41\nLin, H., & Li, M. (2023). Practitioner’s guide to data science. Chapman and Hall/CRC. https://doi.org/10.1201/9781351132916"
+  },
+  {
+    "objectID": "Homework2.html",
+    "href": "Homework2.html",
+    "title": "Homework #2",
+    "section": "",
+    "text": "#Task 1: Basic Vector Practice\n\nCreate two vectors of the pre- and post-measurements:\n\n\npre &lt;- c(130, 128, 116, 124, 133, 134, 118, 126, 114, 127, 141, 138, 128, 140, 137, 131, 120, 128, 139, 135)\n\npost &lt;- c(114, 98, 113, 99, 107, 116, 113, 111, 119, 117, 101, 119, 130, 122, 106, 106, 124, 102, 117, 113)\n\n\nAssign names to the vector elements:\n\n\nnames(pre)  &lt;- paste(\"Subject\", 1:20, sep = \"_\")\nnames(post) &lt;- paste(\"Subject\", 1:20, sep = \"_\")"
   }
 ]
